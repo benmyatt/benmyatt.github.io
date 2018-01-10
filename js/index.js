@@ -492,7 +492,7 @@ function handleEscKey() {
 
 function handleTyping () {
   $(".element").typed({
-    strings: ["ok.", "websites.", "mobile applications." , "prototypes."],
+    strings: ["user interfaces.", "websites.", "mobile applications." , "prototypes."],
     typeSpeed: 10,
     starDelay: 200,
     backDelay: 600,
