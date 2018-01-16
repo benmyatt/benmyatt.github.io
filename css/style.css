@@ -16,9 +16,6 @@ a {
 .element {
   color: #005F81;
 }
-.element span {
-  background-color: blue;
-}
 /* Intro/Greeting Container */
 #intro {
   text-align: center;
