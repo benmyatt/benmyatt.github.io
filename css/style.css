@@ -62,13 +62,28 @@ footer{
   background-color: black;
   color: white;
 }
-
-.footer-pages{
-  background-color: blue;
+/* Nav Links */
+.footer{
+  margin:0px auto;
+  display:table;
+  display:table;
 }
-.footer-pages{
-
+.footer li{
+  float:left;
+  padding:0px 10px;
+  list-style-type: none;
+  padding-top: 50px;
 }
+.footer li a{
+  color:white;
+  transition: all 0.5s ease 0s;
+}
+.footer li a:hover{
+  color:red;
+  transition: all 0.5s ease 0s;
+}
+
+/* Social Links */
 .social{
   margin:0px auto;
   display:table;
