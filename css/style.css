@@ -1,101 +1,26 @@
-html,
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+
 body {
-  font-family: "Raleway", sans-serif;
-  font-smoothing: antialiased;
-  height: 100%;
-}
-a {
-  color: inherit;
-  text-decoration: none !important;
+  background: #EEEEF4;
+  color:#999;
+  font-family:Roboto;
 }
 
-
-
-/* Intro/Greeting Style */
-/* JS Plugin Typing Animation Color */
-.element {
-  color: #005F81;
-}
-/* Intro/Greeting Container */
-#intro {
-  text-align: center;
-  justify-content: center;
-  display: block;
-  background-color: black;
-}
-/* Intro/Greeting Style */
-#intro h1 p {
-  font-size: 42px;
-  color: #f9f9f9;
-  margin: 0;
-}
-/* Name/Town Style */
-#intro h1 strong {
-  font-size: 42px;
-  color: gold;
-}
-/* Animated typing style */
-#intro span {
-  color: gold;
-  font-weight: bold;
-}
-.center {
-  padding-top: 200px;
-  left: 50%;
-  position: relative;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin: 0;
-  padding-bottom: 0;
+h1{
+  font-weight:100;
+  font-size:27pt;
+  color:#E43;
 }
 
+p{font-weight:300;}
 
-/* Footer Section */
-footer{
-  display:table;
+.warning-content {
+	position:absolute;
+  top:25%;
   width:100%;
-  background-color: black;
-  color: white;
-}
-/* Nav Links */
-.footer{
-  margin:0px auto;
-  display:table;
-  display:table;
-}
-.footer li{
-  float:left;
-  padding:0px 10px;
-  list-style-type: none;
-  padding-top: 50px;
-}
-.footer li a{
-  color:white;
-  transition: all 0.5s ease 0s;
-}
-.footer li a:hover{
-  color:red;
-  transition: all 0.5s ease 0s;
-}
+  height:300px;
+  text-align:center;
+  margin:0;
 
-/* Social Links */
-.social{
-  margin:0px auto;
-  display:table;
-  display:table;
-}
-.social li{
-  float:left;
-  padding:0px 10px;
-  list-style-type: none;
-  padding-top: 50px;
-}
-.social li a{
-  color:white;
-  transition: all 0.5s ease 0s;
-}
-.social li a:hover{
-  color:red;
-  transition: all 0.5s ease 0s;
+
 }
