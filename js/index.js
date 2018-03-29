@@ -409,7 +409,7 @@
         // time before backspacing
         backDelay: 500,
         // loop
-        loop: false,
+        loop: true,
         // false = infinite
         loopCount: false,
         // show cursor
@@ -492,12 +492,12 @@ function handleEscKey() {
 
 function handleTyping () {
   $(".element").typed({
-    strings: ["user interfaces.", "websites.", "mobile applications." , "prototypes."],
-    typeSpeed: 10,
+    strings: ["a Business Consultant", "a Visual Designer", "a Software Engineer"],
+    typeSpeed: 50,
     starDelay: 200,
     backDelay: 600,
     loop: true,
-    showCursor: false,
+    showCursor: true,
     cursorChar: "|"
   });
 }

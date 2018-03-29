@@ -2,98 +2,263 @@
 <html lang="en">
 
 	<!--
-	Benjamin Myatt - Professional Website
-	Created: February 20th, 2018
-	Last Updated: February 21st 2018
+    Benjamin Myatt
+    Professional Portfolio Website
+    Home Page
+    Created: 3/21//2018
+    Updated: 3/29/2018
 	-->
 
-	<!-- Header Content -->
 	<head>
 		<meta charset="utf-8">
 		<title>Benjamin Myatt</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Benjamin Myatt</title>
 
 		<!-- CSS & Normalize -->
 	  <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114609392-1"></script>
-		<script>
-	  	window.dataLayer = window.dataLayer || [];
-	  	function gtag(){dataLayer.push(arguments);}
-	  	gtag('js', new Date());
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/web-logo.svg"/>
 
-	  	gtag('config', 'UA-114609392-1');
-		</script>
+    <!-- Font Awesome Link -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+    <!-- JS Animation Link -->
+		<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+
+    <!-- Sidebar Jquery Navigation Script -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".menu-icon").click(function(){
+          $(".menu-icon").toggleClass("active")
+        })
+
+        $(".menu-icon").click(function(){
+          $(".sidebar").toggleClass("active")
+        })
+      })
+    </script>
 
 
- 	</head>
-
-
-
-<html>
-<head>
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.bg {
-
-    background-image: url("http://www.emediagroup.info/wp-content/uploads/2017/12/shutterstock_161594762.jpeg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-}
-
-  .border {
-    border-top: solid;
-    border-color: white;
-    border-bottom: solid;
-    border-width:1px;
-    padding-top:5px;
-    padding-bottom:5px;
-
-  }
-
-  .logo {
-    margin-bottom:0px;
-  }
-
-</style>
+		<!--[if lt IE 9]>
+    		<script src="components/html5shiv/html5shiv.min.js"></script>
+		<![endif]-->
 </head>
+
 <body>
 
-<div class="bg">
+  <div id="top">
+  </div>
 
-  <div class="caption">
-    <div class="logo"><img src="images/web-logo.svg " height="150px"> </img></div>
-    <span style="text-transform:uppercase;color:white;font-size: 35px;font-family: Lato, sans-serif;letter-spacing:1.2px;" class="border">New site coming 3/1/2018! </span><br>
-    <div style="margin-top:20px;color:white;font-size: 18px;font-family: Lato, sans-serif;letter-spacing:2px;">My site is getting a makeover! Stay tuned for the new site.</div>
-		<div style="margin-top:20px;color:white;font-size: 18px;font-family: Lato, sans-serif;letter-spacing:2px;"><a href="mailto:bcmyatt@gmail.com">Email me</a> for more information.</div>
-	</div>
+  <div class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="sidebar">
+
+    <a href="#"><img src="images/web-logo.svg" height="200"></a>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <ul class="social-icon">
+      <li><a href="https://www.facebook.com/BenMyatt"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/BenMyatt"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="http://codepen.io"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/benjamin-myatt-47043883/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href="http://google.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+
+
+  <section class="intro">
+    <div class="inner">
+      <div class="content">
+        <h1>Nice to meet you!</h1>
+        <h1>My name is <strong>Ben Myatt.</strong></h1>
+        <h1><span class="element"></span></h1>
+        <h1>living in <strong>Naperville, IL.</strong></h1>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="skills">
+    <h1>My Skillset</h1>
+    <h2>I enjoy getting my feet wet in all phases of projects.</h2>
+    <div class="row">
+
+
+    <!-- Project Mgmt -->
+        <div class="service-box ">
+            <div class="service-icon">
+                <div class="front-content">
+                    <i class="fa fa-database"></i>
+                    <h3>Project Management</h3>
+                </div>
+            </div>
+            <div class="service-content">
+                <h3>Project Management</h3>
+                <p>I collaborate with clients and coworkers to bring projects to the finish line on time. I have a passion
+									for constructing solutions to problems and working diligently to see them through to the end.</p>
+            </div>
+        </div>
+
+			<!-- Content Creation -->
+					<div class="service-box">
+							<div class="service-icon">
+									<div class="front-content">
+											<i class="fa fa-paint-brush"></i>
+											<h3>Content Creation</h3>
+									</div>
+							</div>
+							<div class="service-content">
+									<h3>Content Creation</h3>
+									<p>Projects involved compiling lots of resources. Whether it's audio, video or graphics,
+										I have experience creating all types of media.</p>
+							</div>
+					</div>
+
+    <!-- Design -->
+        <div class="service-box">
+            <div class="service-icon">
+                <div class="front-content">
+                    <i class="fa fa-picture-o"></i>
+                    <h3>UX/UI Design</h3>
+                </div>
+            </div>
+            <div class="service-content">
+                <h3>UX/UI Design</h3>
+                <p>From research to wireframes &amp; prototypes, I build intuitive interfaces focusing on
+									information structure, visceral UI and creating simple user interactions.</p>
+            </div>
+        </div>
+
+			<!-- Development -->
+					<div class="service-box">
+							<div class="service-icon">
+									<div class="front-content">
+											<i class="fa fa-connectdevelop"></i>
+											<h3>Development</h3>
+									</div>
+							</div>
+							<div class="service-content">
+									<h3>Website Builds</h3>
+									<p>After testing a design solutions, I enjoy getting my hands dirty and programming.
+					        Whether it's web or mobile, I'm able to help bring projects from idea to end product.</p>
+							</div>
+					</div>
+    </div>
+  </div>
+
+
+  <!-- Portfolio Seciton -->
+  <div class="portfolio">
+    <h1>Portfolio</h1>
+
+    <!-- Row 1 -->
+    <div class="portfolio-row">
+
+      <div class="project" style="background-image: url('images/housemate-tile.png')">
+        <a href="http://google.com">
+          <h2>Housemate</h2>
+            <p>An iOS application for managing tasks with roommates.</p>
+            <h5>VIEW PROJECT</h5>
+        </a></div>
+
+      <div class="project" style="background-image: url('images/tackl-tile.png')">
+        <a href="http://google.com">
+          <h2>Tackl</h2>
+            <p>An iOS watch app design mockup for keeping track of daily tasks.</p>
+            <h5>VIEW PROJECT</h5>
+        </a></div>
+
+    </div>
+    <!-- Row 2 -->
+    <div class="portfolio-row">
+
+      <div class="project" style="background-image: url('images/lms-tile.png')">
+        <a href="http://google.com"><h2>LMS</h2>
+          <p>An philanthropy I co-founded to help knock out cancer, partnering with the American Cancer Society.</p>
+        <h5>VIEW PROJECT</h5></a></div>
+
+        <div class="project" style="background-image: url('images/tabl-tile.png')">
+          <a href="http://google.com"><h2>Tabl</h2>
+            <p>An iOS watch app for tracking tasks and getting things done.</p>
+            <h5>VIEW PROJECT</h5></a></div>
+
+
+    </div>
+
+    <!-- Row 3 - Add when Finished
+    <div class="portfolio-row">
+      <div class="project" style="background-image: url('images/cuties-tile.png')">
+        <a href="http://google.com">
+          <h2>Cuties Cupcakes</h2>
+            <p>An iOS watch app for tracking tasks and getting things done.</p>
+            <h5>VIEW PROJECT</h5></a></div>
+
+      <div class="project" style="background-color: black">
+          <h2>Vintage Finds</h2>
+          <p>An iOS watch app for tracking tasks and getting things done.</p>
+          <a href="http://google.com"><h5>VIEW PROJECT</h5></a>
+      </div>
+    </div> -->
+
+
+  <div class="connect">
+    <h1>Let's Work Together.</h1>
+    <h2>I'm currently looking full-time positions and projects. Please take a few minutes
+			to take a look at my resume and reach out to me. I would love to hear from you!</h2>
+      <div class="button-container">
+        <button id="resume"><a href="http//www.google.com">My Resume</a></button>
+      </div>
+      <div class="button-container">
+        <button id="email"><a href="mailto:bcmyatt@gmail.com">Email Me</a></button>
+      </div>
+
+
 </div>
 
-</body>
-</html>
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+		<ul class="nav">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">PORTFOLIO</a></li>
+			<li><a href="#">RESUME</a></li>
+			<li><a href="#">BLOG</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+</div>
 
+
+		<div id="footer">
+
+    <ul class="social-icon-footer">
+      <li><a href="https://www.facebook.com/BenMyatt"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/BenMyatt"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="http://codepen.io"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/benjamin-myatt-47043883/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href="http://google.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+		<p>Made with love by Ben Myatt
+	</div>
+
+
+
+  <script src="js/index.js"></script>
 </body>
+
 </html>
