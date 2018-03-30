@@ -248,6 +248,7 @@ body {
 /* ABOUT SECTION - deleted for now. need better design*/
 .about {
   text-align: center;
+
   background-color: #ECECEC;
   margin: 0;
   padding: 0;
@@ -262,7 +263,9 @@ body {
   padding:0px;
   margin:0px;
   text-align: center;
-  background-color: #ececec;
+
+  background-repeat: no-repeat;
+  background-color: #e4f1fe;
   color: #252B30;
   padding-bottom: 120px;
 }
@@ -436,14 +439,14 @@ body {
 .project h2  {
   color: white;
   position:absolute;
-  bottom: 33%;
+  bottom: 28%;
   left: 10%;
 }
 /* Portfolio - Project Description */
 .project p {
   color: white;
   position:absolute;
-  bottom: 18%;
+  bottom: 12%;
   left: 10%;
   word-wrap: break-word;
   margin-right: 15%;
@@ -477,6 +480,7 @@ body {
 /* Connect Title */
 .connect h1 {
   color: #000000;
+  padding-top: 70px;
 }
 /* Connect Subheader */
 .connect h2 {
@@ -484,7 +488,6 @@ body {
   font-weight: lighter;
   padding-left: 350px;
   padding-right: 350px;
-  margin-top: -70px;
   margin-bottom: 50px;
   font-weight: 100;
   font-size: 22px;
@@ -526,7 +529,7 @@ button a:link {
   letter-spacing: 2px;
 }
 button a:visited {
-   color: black;
+   color: #FFFFFF;
    text-decoration: none;
    font-family: "Ubuntu";
  }
@@ -550,7 +553,7 @@ button a:active {
   background-color: #231D2C;
   width: 100%;
   padding-top: 30px;
-  margin:0;
+  margin-bottom: -18px;
   color: white;
 }
 
@@ -558,14 +561,16 @@ button a:active {
   display: flex;
   justify-content: center;
   padding-left: 30px;
-
+  padding-bottom: 5px;
+  font-family: "Ubuntu";
+  font-size: 12px;
+  color: gray;
 
 }
 
 /* Footer Menu Container */
 #footer .footer-menu ul {
   color: white;
-  background-color: blue;
 
   position: absolute;
   top: 50%;
@@ -596,7 +601,7 @@ a {
   width: 100%;
   background: #231D2C;
   height: 30px;
-  padding: 35px;
+  padding-top: 35px;
   position: relative;
   text-align: center;
 }
@@ -705,7 +710,6 @@ a {
   transition: .3s;
   transform: scale(1.5) translate3d( 0, 0, 0);
 }
-
 
 
 /* MEDIA QUERIES */
