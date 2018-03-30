@@ -4,14 +4,14 @@
 	<!--
     Benjamin Myatt
     Professional Portfolio Website
-    About Page
+    Home Page
     Created: 3/21//2018
     Updated: 3/29/2018
 	-->
 
 	<head>
 		<meta charset="utf-8">
-		<title>Benjamin Myatt | About</title>
+		<title>Benjamin Myatt | Home</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,15 +19,29 @@
 	  <link rel="stylesheet" href="css/about.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
+		<!-- Favicon Not Working -->
+		<link rel="icon" type="image/png" href="images/web-logo.svg"/>
+
     <!-- Font Awesome Link -->
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
 
     <!-- JS Animation Link -->
 		<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
 
-    <!-- Sidebar Jquery Navigation Script -->
+    <!-- Jquery Sidebar Navigation Script -->
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".menu-icon").click(function(){
+          $(".menu-icon").toggleClass("active")
+        })
+
+        $(".menu-icon").click(function(){
+          $(".sidebar").toggleClass("active")
+        })
+      })
+    </script>
 
 
 		<!--[if lt IE 9]>
@@ -35,5 +49,33 @@
 		<![endif]-->
 </head>
 
+
 <body>
+	<div class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="sidebar">
+
+    <a href="#"><img src="images/web-logo.svg" height="200"></a>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <ul class="social-icon">
+      <li><a href="https://www.facebook.com/BenMyatt"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/BenMyatt"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="http://codepen.io"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/benjamin-myatt-47043883/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+
+	<h1>Page Coming Soon.</h1>
 </body>
