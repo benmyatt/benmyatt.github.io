@@ -22,6 +22,10 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="images/site-favicon.png"/>
 
+		<!-- Google Fonts (PT Sans & Montserrat) -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+
+
     <!-- Font Awesome Link -->
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
 
@@ -40,6 +44,7 @@
         $(".menu-icon").click(function(){
           $(".sidebar").toggleClass("active")
         })
+
       })
     </script>
 
@@ -60,8 +65,9 @@
     <span></span>
   </div>
 
-  <div class="sidebar">
 
+
+  <div class="sidebar">
     <a href="#"><img src="images/web-logo.svg" height="200"></a>
     <ul class="menu">
       <li><a href="#">Home</a></li>
@@ -91,6 +97,36 @@
       </div>
     </div>
   </section>
+
+
+	<div class="about">
+		    <h1>Get To Know Me</h1>
+				<div class="about-image" style="background-image: url('images/web-headshot.png')">
+
+				</div>
+
+				<div class="about-subhead">
+					<h2>I'm Ben, an aspiring Visual Designer and Developer. I specialize in user experience,
+						 interactive design and web development.</h2>
+				</div>
+				<div class="about-text">
+					<p>I primarily focus on UX/UI design, making sure that systems, interfaces and graphics are
+					human-friendly, aesthetically pleasing and usable. My goal is to create users experiences that
+					are unique, memorable and effective.</p>
+				</div>
+
+				<div class="about-button-box">
+					<a href="about.html" class="about-button">
+					 <em class="em1"> </em>
+						<span>
+							Learn More About Me
+							</span>
+						<em class="em2"> </em>
+					</a>
+				</div>
+
+	</div>
+
 
 
   <div class="skills">
@@ -159,9 +195,17 @@
 							</div>
 					</div>
     </div>
-		<div class="skills-button-container">
-			<button id="viewSkills"><a href="skills.html">Learn More About What I Do</a></button>
+
+		<div class="skills-button-box">
+			<a href="skills.html" class="skill-button">
+			 <em class="em1"> </em>
+				<span>
+					Learn More About What I Do
+					</span>
+				<em class="em2"> </em>
+			</a>
 		</div>
+
   </div>
 
 
@@ -177,6 +221,7 @@
           <h2>Housemate</h2>
             <p>A full-scale iOS application for managing tasks with roommates.</p>
             <h5>VIEW PROJECT</h5>
+
         </a></div>
 
       <div class="project" style="background-image: url('images/tackl-tile.png')">
@@ -201,42 +246,51 @@
             <h5>VIEW PROJECT</h5></a></div>
 				</div>
 
-			<div class="portfolio-button-container">
-				<button id="viewProjects"><a href="portfolio.html">View All Projects</a></button>
-			</div>
+				<div class="port-button-box">
+					<a href="portfolio.html" class="port-button">
+					 <em class="em1"> </em>
+						<span>
+							View All Projects
+							</span>
+						<em class="em2"> </em>
+					</a>
+				</div>
 	</div>
 
-
-    <!-- Row 3 - Add when Finished
-    <div class="portfolio-row">
-      <div class="project" style="background-image: url('images/cuties-tile.png')">
-        <a href="http://google.com">
-          <h2>Cuties Cupcakes</h2>
-            <p>An iOS watch app for tracking tasks and getting things done.</p>
-            <h5>VIEW PROJECT</h5></a></div>
-
-      <div class="project" style="background-color: black">
-          <h2>Vintage Finds</h2>
-          <p>An iOS watch app for tracking tasks and getting things done.</p>
-          <a href="http://google.com"><h5>VIEW PROJECT</h5></a>
-      </div>
-    </div> -->
 
 
   <div class="connect">
     <h1>Let's Work Together.</h1>
     <h2>I'm currently looking full-time positions and projects. Please take a few minutes
 			to take a look at my resume and reach out to me. I would love to hear from you!</h2>
-      <div class="connect-button-container">
-        <button id="resume"><a href="resume.html">My Resume</a></button>
-        <button id="email"><a href="mailto:bcmyatt@gmail.com">Email Me</a></button>
-      </div>
+
+		<div class="resume-button-box">
+			<a href="resume.html" class="resume-button">
+				<em class="em1"> </em>
+				<span>
+					My Resume
+				</span>
+				<em class="em2"> </em>
+			</a>
+		</div>
+
+		<div class="email-button-box">
+			<a href="mailto:bcmyatt@gmail.com" class="email-button">
+				<em class="em1"> </em>
+				<span>
+					Email Me
+					</span>
+				<em class="em2"> </em>
+			</a>
+		</div>
+
+
 	 </div>
 
 <!-- Bottom Navigation -->
 <div class="bottom-nav">
 		<ul class="nav">
-			<li><a href="#top">HOME</a></li>
+			<li><a href="#">HOME</a></li>
 			<li><a href="about.html">ABOUT</a></li>
 			<li><a href="skills.html">SKILLS</a></li>
 			<li><a href="portfolio.html">PORTFOLIO</a></li>
